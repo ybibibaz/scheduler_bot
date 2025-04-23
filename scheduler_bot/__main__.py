@@ -2,9 +2,9 @@ import asyncio
 
 from aiogram import Bot
 
-from src.commands import *  # this line links commands to dispatcher, don't remove
-from src.conf import SettingsConfig
-from src.dispatcher import SingletonDispatcher
+from scheduler_bot.src.commands import *  # this line links commands to dispatcher, don't remove
+from scheduler_bot.src.conf import SettingsConfig
+from scheduler_bot.src.dispatcher import SingletonDispatcher
 
 
 async def main():

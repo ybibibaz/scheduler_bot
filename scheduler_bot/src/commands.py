@@ -2,7 +2,7 @@ import textwrap
 
 from aiogram.filters.command import Command
 
-from src.dispatcher import SingletonDispatcher
+from scheduler_bot.src.dispatcher import SingletonDispatcher
 
 
 GREET_MESSAGE = 'Hello! Welcome to the greatest(!!!) of schedule bots!\n\n'
