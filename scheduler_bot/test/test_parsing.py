@@ -39,6 +39,38 @@ from scheduler_bot.src.parse_message import ParsedMessage
                 'date': datetime.date(datetime.datetime.now().year, 12, 1),
                 'event': 'event_mock',
             },
+        ),
+        (
+            '11.12.2010  12:00  event_mock',
+            {
+                'time': datetime.time(12, 0),
+                'date': datetime.date(2010, 12, 11),
+                'event': 'event_mock',
+            },
+        ),
+        (
+            '11.12  12:00  event_mock',
+            {
+                'time': datetime.time(12, 0),
+                'date': datetime.date(datetime.datetime.now().year, 12, 11),
+                'event': 'event_mock',
+            },
+        ),
+        (
+            '1.12.2010  12:00  event_mock',
+            {
+                'time': datetime.time(12, 0),
+                'date': datetime.date(2010, 12, 1),
+                'event': 'event_mock',
+            },
+        ),
+        (
+            '1.12   12:00  event_mock',
+            {
+                'time': datetime.time(12, 0),
+                'date': datetime.date(datetime.datetime.now().year, 12, 1),
+                'event': 'event_mock',
+            },
         )
     )
 )

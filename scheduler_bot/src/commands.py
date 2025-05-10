@@ -16,8 +16,8 @@ HELP_MESSAGE = textwrap.dedent('''
     /remove_event - Remove event by its id (number from command /events).
 ''').strip()
 EVENT_FORMATS_MESSAGE = textwrap.dedent('''
-    - HH:MM DD.MM.YYYY <event> - simple event.
-    - HH:MM DD.MM <event> - simple event (use current year as year).
+    - HH:MM DD.MM.YYYY <event> or DD.MM.YYYY HH:MM <event>- simple event.
+    - HH:MM DD.MM <event> or DD.MM or HH:MM <event> - simple event (use current year as year).
     - DD <event> - monthly event. Triggers every DD of each month. '''
     '''Uses last day of month if DD is larger then the number of days in month.
     - <day of the week> <event> - weekly event.
