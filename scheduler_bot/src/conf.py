@@ -3,7 +3,7 @@ import json
 import pathlib
 
 
-SETTINGS_CONFIG_PATH = pathlib.Path(__file__).parent / 'configs' / 'settings.json'
+SETTINGS_CONFIG_PATH = pathlib.Path(__file__).parent.parent / 'configs' / 'settings.json'
 CONFIG_EXAMPLE = {
     'token': 'Telegram bot token',
 }
